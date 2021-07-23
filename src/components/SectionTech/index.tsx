@@ -2,6 +2,7 @@ import React from 'react'
 
 import Heading from 'components/Heading'
 import Container from 'components/Container'
+
 import * as S from './styles'
 import { SectionTechProps } from 'types/types'
 import { getImageUrl } from 'utils/getImegUrl'
