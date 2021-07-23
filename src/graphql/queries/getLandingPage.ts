@@ -84,6 +84,25 @@ const GET_LANDING_PAGE = /* GraphQl */ `
         }
       }
     }
+
+    fragment sectionAboutUs on LandingPage {
+      sectionAboutUs {
+        title
+        authors {
+          name
+          role
+          description
+          image {
+            alternativeText
+            url
+          }
+          social {
+            title
+            description
+          }
+        }
+      }
+    }
       
     query GET_LANDING_PAGE {
         landingPage {
@@ -95,6 +114,7 @@ const GET_LANDING_PAGE = /* GraphQl */ `
             ...sectionModules
             ...sectionAgenda
             ...pricingBox
+            ...sectionAboutUs
         }
     }
 `

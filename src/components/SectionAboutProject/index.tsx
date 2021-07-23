@@ -5,7 +5,7 @@ import Container from 'components/Container'
 
 import * as S from './styles'
 import { SectionAboutProjectProps } from 'types/types'
-import { getImageUrl } from 'utils/getImegUrl'
+import { getImageUrl } from 'utils/getImagUrl'
 
 const SectionAboutProject = ({
   title,
