@@ -25,8 +25,14 @@ export type SectionAboutProjectProps = {
   }
 }
 
+export type SectionTechProps = {
+  title: string
+  techIcons: []
+}
+
 export type LandingPageProps = {
   logo: LogoProps
   header: HeaderProps
   sectionAboutProject: SectionAboutProjectProps
+  sectionTech: SectionTechProps
 }
