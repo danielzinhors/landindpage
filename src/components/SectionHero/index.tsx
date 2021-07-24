@@ -6,14 +6,14 @@ import * as S from './styles'
 
 import { gaEvent } from 'utils/ga'
 import Container from 'components/Container'
-import { HeaderProps, LogoProps } from 'types/types'
+import { HeaderProps, Imagem } from 'types/types'
 import { getImageUrl } from 'utils/getImagUrl'
 
 const onClick = () =>
   gaEvent({ action: 'click', category: 'cta', label: 'hero button' })
 
 type Props = {
-  logo: LogoProps
+  logo: Imagem
   header: HeaderProps
 }
 
