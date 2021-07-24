@@ -86,13 +86,12 @@ export type ReviewsProps = {
   id: string
   name: string
   text: string
-  photo: Imagem 
+  photo: Imagem
 }
 
 export type SectionReviewsProps = {
   title: string
   reviews: ReviewsProps[]
-  }
 }
 
 export type LandingPageProps = {
