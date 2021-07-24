@@ -118,6 +118,16 @@ const GET_LANDING_PAGE = /* GraphQl */ `
         }
       }  
     }
+
+    fragment sectionFaq on LandingPage {
+      sectionFaq {
+        title
+        questions {
+          question
+          answer
+        }
+      }
+    }
       
     query GET_LANDING_PAGE {
         landingPage {
@@ -131,6 +141,7 @@ const GET_LANDING_PAGE = /* GraphQl */ `
             ...pricingBox
             ...sectionAboutUs
             ...sectionReviews
+            ...sectionFaq
         }
     }
 `
