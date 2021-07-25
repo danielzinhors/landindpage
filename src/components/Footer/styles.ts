@@ -25,3 +25,39 @@ export const Wrapper = styled.footer`
     }
   `}
 `
+
+export const Text = styled.div`
+  ${({ theme }) => css`
+    margin-top: ${theme.spacings.medium};
+
+    p {
+      color: ${theme.colors.texts};
+      margin-bottom: ${theme.spacings.small};
+    }
+
+    strong {
+      border-bottom: 2px solid ${theme.colors.primary};
+    }
+  `}
+`
+
+export const Copy = styled.div`
+  ${({ theme }) => css`
+    margin-top: ${theme.spacings.medium};
+    width 100%;
+    background-color: #000;
+    text-align: initial;
+    padding-left: 15px;
+    color: #fff;
+    position:absolute;
+    bottom:0;
+    p {
+      color: ${theme.colors.texts};
+      margin-bottom: ${theme.spacings.small};
+    }
+
+    strong {
+      border-bottom: 2px solid ${theme.colors.primary};
+    }
+  `}
+`

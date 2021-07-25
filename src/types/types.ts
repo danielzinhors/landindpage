@@ -104,6 +104,11 @@ export type SectionFaqProps = {
   questions: QuestionsProp[]
 }
 
+export type SectionFooterProps = {
+  description: string
+  copy: string
+}
+
 export type LandingPageProps = {
   logo: Imagem
   header: HeaderProps
@@ -116,4 +121,5 @@ export type LandingPageProps = {
   sectionAboutUs: SectionAboutUsProps
   sectionReviews: SectionReviewsProps
   sectionFaq: SectionFaqProps
+  sectionFooter: SectionFooterProps
 }

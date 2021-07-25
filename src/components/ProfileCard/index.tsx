@@ -1,16 +1,18 @@
 import React from 'react'
 
 import { GrGithub } from 'react-icons/gr'
-import { FaDribbble, FaTwitter } from 'react-icons/fa'
+import { FaDribbble, FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa'
 
 import * as S from './styles'
 import { Autores } from 'types/types'
 import { getImageUrl } from 'utils/getImagUrl'
 
 const icons = {
-  Twiter: <FaTwitter />,
+  Twitter: <FaTwitter />,
   Github: <GrGithub />,
-  Dribble: <FaDribbble />
+  Dribbble: <FaDribbble />,
+  Facebook: <FaFacebook />,
+  Linkedin: <FaLinkedin />
 }
 
 const ProfileCard: React.FC<Autores> = ({
